@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <title>Patron Report</title>
+        {% load bootstrap3 %}
+
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        <style type="text/css">
+            body {
+                 font-weight: 200;
+                 font-size: 14px;
+            }
+            
+            .header {
+                 font-size: 20px;
+                 font-weight: 100;
+                 text-align: center;
+                 color: #007cae;
+            }
+            
+            .title {
+                 font-size: 22px;
+                 font-weight: 100;
+                /* text-align: right;*/
+                padding: 10px 20px 0px 20px;  
+             }
+            
+            .title span {
+                 color: #007cae;
+             }
+            
+            .details {
+                 padding: 10px 20px 0px 20px;
+                 text-align: left !important;
+                 /*margin-left: 40%;*/
+             }
+            
+            .hrItem {
+                 border: none;
+                 height: 1px;
+                 /* Set the hr color */
+                 color: #333; /* old IE */
+                 background-color: #fff; /* Modern Browsers */
+            }
+
+            article div {
+                background: -webkit-radial-gradient(#fafbfa, #D4DDD6);
+                background: -o-radial-gradient(#fafbfa, #D4DDD6);
+                background: -mos-radial-gradient(#fafbfa, #D4DDD6);
+                background: radial-gradient(#fafbfa, #D4DDD6);
+                border: 6px solid black;  
+                height: 175px;
+                margin: 20px;
+                width: 175px;
+            }
+            
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class='wrapper'>
+            <div class='header'>
+                <h1>Web Analysis</h1>
+            </div>
+        </div>  
+
+        <div>
+            <div class='details'>
+                first_name last_name {{ data.amount }}<br/>
+                Patron #patron_id  <br/> 
+            </div>
+
+            <div class='header'>
+                <h5>Status Report: <span style="color: Green">G</span></h5>
+            </div>
+
+            <div class='header'>
+                <h4 style="color: black"> Social Media Analysis </h4>
+            </div>
+
+            <article>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </article>
+        </div>  
+          
+
+
+
+
+    </body>
+</html>
